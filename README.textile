@@ -1,0 +1,3 @@
+h1. AngularJS Twitter example
+
+AngularJS example application showing how information about Twitter user can be retrieved.

@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app="Twitter">
+  <head>
+    <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js" type="text/javascript"></script>
+    <script src="http://code.angularjs.org/1.0.1/angular-resource-1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/twitter.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" media="screen" href="css/screen.css" type="text/css" />
+  </head>
+  <body>
+    <div ng-controller="TwitterController">
+      <label>Twitter username:</label>
+      <input type="text" ng-model="username" placeholder="Enter username">
+      <button ng-click='fetch()'>fetch</button>
+      <hr>
+      <h1>{{screenName}}</h1>
+      <table summary="user information">
+        <tr>
+          <th>Name</th>
+          <td>{{userData.name}}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{{userData.description}}</td>
+        </tr>
+        <tr>
+          <th>URL</th>
+          <td>{{userData.url}}</td>
+        </tr>
+        <tr>
+          <th>Favourites count</th>
+          <td>{{userData.favourites_count}}</td>
+        </tr>
+        <tr>
+          <th>Friends count</th>
+          <td>{{userData.friends_count}}</td>
+        </tr>
+        <tr>
+          <th>Followers count</th>
+          <td>{{userData.followers_count}}</td>
+        </tr>
+        <tr>
+          <th>Tweets count</th>
+          <td>{{userData.statuses_count}}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
