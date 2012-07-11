@@ -8,7 +8,10 @@ function TwitterController($scope, $resource) {
   );
 
   $scope.fetch = function() {
-    $scope.userData = $scope.twitter.get({screen_name:$scope.username});
-    $scope.screenName = $scope.username;
+    if (angular.isDefined($scope.username) && $scope.username != '')
+    {
+      $scope.userData = $scope.twitter.get({screen_name:$scope.username});
+      $scope.screenName = $scope.username;
+    }
   };
 }
