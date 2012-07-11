@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eff0ff;
+  color: #000;
+  font-family: "Arial CE", "Helvetica CE", Arial, helvetica, sans-serif;
+  text-align: center;
+}
+
+#header {
+  background-color: #cdf;
+  border-bottom: 2px solid #69f;
+  margin-bottom: 1em;
+  padding: 0.9em 0 0.8em 0;
+}
+
+#info {
+  background-color: #def;
+  border: 1px solid #69f;
+  border-collapse: collapse;
+  margin: 1em auto 0 auto;
+  text-align: left;
+  vertical-align: top;
+  width: 600px;
+}
+
+#info th, #info td {
+  border: 1px solid #69f;
+  padding: 0.2em 0.5em;
+}
+
+#info th {
+  background-color: #cdf;
+  width: 30%;
+}
+
+#info td {
+  width: 70%;
+}
