@@ -18,6 +18,7 @@
         <button ng-click='fetch()'>fetch</button>
       </div>
       
+      <div ng-show="screenName">
       <h1>{{screenName}}</h1>
       <table id="info" summary="user information">
         <tr>
@@ -49,6 +50,7 @@
           <td>{{userData.statuses_count}}</td>
         </tr>
       </table>
+      </div>
       
     </div>
   </body>
