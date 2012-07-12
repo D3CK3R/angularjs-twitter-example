@@ -10,6 +10,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: #00f;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #header {
   background-color: #cdf;
   border-bottom: 2px solid #69f;
